@@ -1,0 +1,57 @@
+/*
+    Step1:Understand the problem statement
+    Step2:Write the algorithm
+    Step3:Decide the Language
+    Step4:Write a program
+    
+*/
+///////////////////////////////////////////////////////////////////
+//
+// Step1:Understand the problem statement
+//       User is going to enter any 2 interger
+//       and we have to perform addition
+//       
+///////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////
+//
+// Step2:Write the algorithm
+/*  
+    START
+            Accept first number as no1
+            Accept second number as no2
+            create the variable as ans to store the result
+            perform the addition and store into ans
+            Display the result from ANS
+    END
+
+*/ 
+///////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////
+//
+//  Step3:Decide the Language
+//       We select C programming
+//       
+///////////////////////////////////////////////////////////////////
+ 
+///////////////////////////////////////////////////////////////////
+//
+// Step4:Write a program
+//
+///////////////////////////////////////////////////////////////////
+
+
+#include<stdio.h>
+int main()
+{
+  
+   int iValue1=10, iValue2=11, iResult=0;
+
+ iResult=iValue1+iValue2;
+
+ printf("Addition : %d",iResult);
+
+
+    return 0;
+}
