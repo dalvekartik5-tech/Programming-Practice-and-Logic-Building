@@ -1,0 +1,61 @@
+/*
+    irow=4
+    icol=4
+#       2       3       4
+
+1       #       3       4
+
+1       2       #       4
+
+1       2       3       #
+
+*/
+#include<stdio.h>
+#include<stdlib.h>
+
+void Pattern(int irow,int icoll)
+{
+    int i=0,j=0;
+    if(irow!=icoll)
+    {
+        printf("Invalid input\n");
+        return;
+    }
+    
+    for(i=1;i<=irow;i++)
+    
+    {
+      
+        for(j=1;j<=icoll;j++)
+        {
+           if(i==j)
+           {
+            printf("#\t");
+           }
+           else 
+           {
+            
+            printf("%d\t",j);
+           }
+           
+         
+        }
+        printf("\n\n");
+    }   
+}
+
+int main()
+{
+
+    int iValue1=0,iValue2=0;
+
+    printf("Enter your row: ");
+    scanf("%d",&iValue1);
+
+    printf("Enter your column : ");
+    scanf("%d",&iValue2);
+
+    Pattern(iValue1,iValue2);
+
+    return EXIT_SUCCESS;
+}
